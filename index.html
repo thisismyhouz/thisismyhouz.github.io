@@ -21,29 +21,39 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("const.jpg");
+  background-image: url("images/const.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("lobby.jpg");
+  background-image: url("images/lobby.jpg");
   min-height: 400px;
+  opacity:1.0;
 }
 
 .bgimg-3 {
-  background-image: url("products.jpg");
+  background-image: url("images/products.jpg");
   min-height: 400px;
 }
 
 .bgimg-4 {
-  background-image: url("const.jpg");
+  background-image: url("images/const.jpg");
   min-height: 400px;
 }
 
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 50%; /*CENTERED at 50 percent of page from top*/
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.captionquarter {
+  position: absolute;
+  left: 0;
+  top: 25%; /*CENTERED at 50 percent of page from top*/
   width: 100%;
   text-align: center;
   color: #000;
@@ -60,8 +70,11 @@ body, html {
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 30px "Lato", sans-serif;
   color: #111;
+}
+div.a {
+    text-align:center;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -69,43 +82,94 @@ h3 {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
+}*/
+</style>
+<link type="text/css" rel="stylesheet.css" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.background {
+    background: url(klematis.jpg) repeat;
+    border: 2px solid black;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 </style>
-<link type="text/css" rel="stylesheet.css" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
+
+</head>
 <body>
 
 <div class="bgimg-1">
-  <div class="caption">
-    <span class="border"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GLAZE HAIR STUDIO</font></font></span>
+  <div class="captionquarter">
+    <div style="padding: 8px;">
+        <div>
+            <div class="logo;">
+              <img src="images/logo.jpg" width="800" height="400" alt="Logo">
+            </div>
+        </div>
+    </div>
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We're Rennovating!</font></font></h3>
-  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We're working on a major upgrade to the Glaze Experience, so please pardon our dust. </font><font style="vertical-align: inherit;">Thank you for your patience. </font><font style="vertical-align: inherit;">We promise, you won't be disappointed! </font><font style="vertical-align: inherit;">We'll be bigger. </font><font style="vertical-align: inherit;">We'll be better. </font><font style="vertical-align: inherit;">You'll be happy. </font><font style="vertical-align: inherit;">We're looking forward to it!</font></font></p>
-</div>
+<div style="color: black;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><font style="vertical-align: inherit;">We're Upgrading!</font></font></h3>
 
+  <p>
+    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    <div class="a"><font size="5px">We're working on a major upgrade to the Glaze Experience, so please pardon our dust.</font> 
+    </div>
+  </font>
+</font>
+  </p>
+</div> 
 <div class="bgimg-2">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IN THE MEANTIME, PLEASE VISIT US AT OUR CURRENT LOCATION, 3065 LAUDERDALE DRIVE HENRICO VA  23233</font></font></span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+      <div class="background">
+      <font style="vertical-align: inherit;color:black">
+        
+          <div class="transbox">
+        <font style="vertical-align: inherit;">IN THE MEANTIME, PLEASE VISIT US AT OUR CURRENT LOCATION, 3065 LAUDERDALE DRIVE HENRICO VA  23233</font>
+          </div>
+        
+      </font>
+        </div>
+    </span>
   </div>
 </div>
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CALL US - 804-364-0002</font></font></p>
+    <p><font style="vertical-align: inherit;"><font size="5px">
+      <div class="a">CALL US - 804-364-0002</div></font></font></p>
   </div>
 </div>
 
 <div class="bgimg-3">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WE'RE SO EXCITED!!</font></font></span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">STAY TUNED...THIS IS GOING TO BE GOOD!</font></font></span>
   </div>
 </div>
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DON'T FORGET TO CALL!! 804-364-0002</font></font></p>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">804-364-0002</font></font></p>
   </div>
 </div>
 
@@ -118,12 +182,14 @@ h3 {
     <div style="padding: 8px;">
         <div>
             <div class="logo">
-              <img src="images/logo.jpg" width="400" height="400" alt="Google Translate">
+              <img src="images/logo.jpg" width="800" height="400" alt="Logo">
             </div>
         </div>
     </div>
   <div class="top" style="padding: 8px; float: left; width: 100%;">
-    <h1 class="title gray">GLAZE HAIR STUDIO</h1>
+    <div class="a">
+    <h1 class="title gray">3065 Lauderdale Drive - Henrico, VA  23233</h1>
+  </div>
   </div>
   <div class="middle" style="padding: 8px;">
     <div class="original-text">
@@ -132,7 +198,7 @@ h3 {
   </div>
   <div class="bottom" style="padding: 8px;">
     <div class="activity-links">
-      <span class="activity-link">GET READY!</span>
+      <span class="activity-link">Copyright Glaze Hair Studio LLC 2018</span>
       <span class="activity-link"></span>
     </div>
     <div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
@@ -147,4 +213,14 @@ h3 {
 </div>
 
 
-<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
+<div class="goog-te-spinner-pos">
+  <div class="goog-te-spinner-animation">
+    <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66">
+      <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+        
+      </circle>
+    </svg>
+  </div>
+</div>
+</body>
+</html>
